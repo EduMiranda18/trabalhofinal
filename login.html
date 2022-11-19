@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/aa_trabalho_final/css/login.css">
+    <title>Document</title>
+  </head>
+  <body>
+
+    <navbar id="navbar">
+        <div class="navbar-container">
+            <i id= "iconeV" class="fa-solid fa-wine-bottle"></i>
+            <ul class="navbar-itens">
+                <li class="navbar-item">Vinhos</li>
+                <li class="navbar-item">Vinhaça dos Cria</li>
+                
+                <li class="navbar-item"> <a href="index.html">Inicio</a> </li>
+            </ul>
+        </div>
+    </navbar>
+
+    <div class="caixa">
+      <h1>cadastro</h1>
+
+      <form action="#" method="get" class="formulario">
+        <div class="inpute">
+          <label id="Ibnome">Nome:</label>
+          <input
+            type="text"
+            size="40"
+            name="nome"
+            value=""
+          /><!-- type="text" serve para escrever -->
+        </div>
+
+        <div class="inpute">
+          <label for="cpf">CPF:</label>
+          <input
+            type="cpf"
+            id="cpf"
+            name="cpf"
+            pattern="[0-9]{3}[0-9]{3}[0-9]{3}[0-9]{2}"
+          />
+        </div>
+
+        <div class="inpute">
+          <label for="nascimento">data de nascimento:</label>
+          <input type="date" id="birthday" name="birthday" />
+        </div>
+
+        <div class="inpute">
+          <label for="pwd">senha:</label>
+          <input type="password" id="senha" name="senha" />
+        </div>
+
+        <div class="inpute">
+          <label for="pwd">repita a senha:</label>
+          <input type="password" id="repita" name="repita" />
+        </div>
+
+        <div>
+          <input type="submit" value="cadastrar" class="btn-cadastrar" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
